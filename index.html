@@ -1,90 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>B9A5 - Smart Ticketing System</title>
 
-    <!-- tailwindcss & daisyui -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B9A5 - Smart Ticketing System</title>
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- tailwindcss & daisyui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <style>
-      .font-inter {
-        font-family: "Inter", sans-serif;
-      }
-      .font-raleway {
-        font-family: "Raleway", sans-serif;
-      }
-      .font-Rroboto {
-        font-family: "Roboto", sans-serif;
-      }
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
 
-      body {
-        font-family: "Roboto", sans-serif;
-        color: #030712;
-      }
-    </style>
-  </head>
-  <body class="">
-    <!-- <body class="lg:max-w-[1170px] lg:mx-auto"> -->
-    <header class="header container mx-auto mb-14" id="headerContainer">
-      <!-- navbar section starts -->
-      <section class="navbar" id="menuSect">
-        <!-- 1. navbar (bonus) section starts -->
-        <nav class="navbar" id="">
-          <div class="navbar bg-white">
-            <div class="navbar-start justify-between lg:justify-normal">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16"
-                    />
-                  </svg>
-                </div>
-                <!-- sm screen menu -->
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52"
-                >
-                  <li><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Destination</a></li>
-                  <li><a>Search</a></li>
-                </ul>
+  <style>
+    .font-inter {
+      font-family: "Inter", sans-serif;
+    }
+
+    .font-raleway {
+      font-family: "Raleway", sans-serif;
+    }
+
+    .font-Rroboto {
+      font-family: "Roboto", sans-serif;
+    }
+
+    body {
+      font-family: "Roboto", sans-serif;
+      color: #030712;
+    }
+  </style>
+</head>
+
+<body class="">
+  <!-- <body class="lg:max-w-[1170px] lg:mx-auto"> -->
+  <header class="header container mx-auto mb-14" id="headerContainer">
+    <!-- navbar section starts -->
+    <section class="navbar" id="menuSect">
+      <!-- 1. navbar (bonus) section starts -->
+      <nav class="navbar" id="">
+        <div class="navbar bg-white">
+          <div class="navbar-start justify-between lg:justify-normal">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
               </div>
-
-              <div class="">
-                <a class="text-2xl lg:text-4xl font-extrabold"
-                  ><span class="text-[36px] font-raleway">P-Ticket</span></a
-                >
-              </div>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <!-- lg screen menu -->
-              <ul class="menu menu-horizontal px-1 text-lg">
+              <!-- sm screen menu -->
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52">
                 <li><a>Home</a></li>
                 <li><a>About</a></li>
                 <li><a>Destination</a></li>
@@ -92,321 +62,401 @@
               </ul>
             </div>
 
-            <div class="navbar-end">
-              <div class="navbar-end w-32">
-                <a
-                  class="btn border-green-500 bg-[#1DD1001A] text-[#1DD100] bg-opacity-10 text-lg hover:bg-white hover:border-green-500"
-                  >Bus <img src="./images/bus-icon.png" alt="bus-icon"
-                /></a>
-              </div>
+            <div class="">
+              <a class="text-2xl lg:text-4xl font-extrabold"><span class="text-[36px] font-raleway">P-Ticket</span></a>
             </div>
           </div>
-        </nav>
-        <!-- navbar ends -->
-      </section>
-      <!-- navbar section ends -->
+          <div class="navbar-center hidden lg:flex">
+            <!-- lg screen menu -->
+            <ul class="menu menu-horizontal px-1 text-lg">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
 
-      <!-- banner section starts -->
-      <section class="banner" id="bannerSect">
-        <!-- daisyui hero <> -->
-        <div
-          class="hero min-h-screen rounded-3xl"
-          style="background-image: url(./images/banner.png)"
-        >
-          <div class="hero-overlay bg-opacity-10 rounded-3xl"></div>
-          <div class="hero-content text-center text-neutral-content">
-            <div class="max-w-lg">
-              <h1 class="mb-5 text-5xl font-bold leading-normal">
-                <span class="text-white" id="">End-to-End Travel with </span>
-                <br />
-                <span class="text-[#1DD100]" id="">P Paribahan</span>
-              </h1>
-              <p class="mb-5 leading-8 text-lg">
-                Yes, you can run unit tests and view the results directly within
-                the app. The integrated testing features allow for a streamlined
-                .
-              </p>
-              <a href="#phParibahanSect"
-                ><button
-                  class="btn bg-[#1DD100] hover:bg-[#1DD100] border-0 mt-4"
-                >
-                  Buy Tickets
-                </button></a
-              >
+          <div class="navbar-end">
+            <div class="navbar-end w-32">
+              <a
+                class="btn border-green-500 bg-[#1DD1001A] text-[#1DD100] bg-opacity-10 text-lg hover:bg-white hover:border-green-500">Bus
+                <img src="./images/bus-icon.png" alt="bus-icon" /></a>
             </div>
           </div>
         </div>
-        <!-- daisyui hero </> -->
-      </section>
-      <!-- banner section ends -->
+      </nav>
+      <!-- navbar ends -->
+    </section>
+    <!-- navbar section ends -->
 
-      <!-- stats sub-section <> -->
-      <!-- stats sub-section </> -->
-    </header>
-
-    <main class="main mx-auto border-red-600 border-2" id="mainContainer">
-      <!-- best offers section starts -->
-      <section class="bestOffers container mx-auto my-16" id="bestOfferSect">
-        <h2
-          class="text-center font-raleway font-bold text-[40px] pb-12"
-          id="bestOfferHeading"
-        >
-          Best offers for you
-        </h2>
-
-        <div class="couponsContainer lg:flex justify-between lg:gap-6 w-auto">
-          <div class="yellowContainer bg-yellow-500 flex w-full rounded-3xl">
-            <div class="p-12" id="">
-              <p class="text-[40px] font-extrabold font-inter" id="">15% OFF</p>
-              <p class="text-[20px] font-bold font-inter" id="">
-                on your next purchase
-              </p>
-              <p class="text-[18px] font-inter" id="">use by January 2024</p>
-            </div>
-            <div class="" id="">
-              <img src="./images/cupon-devider.png" alt="" />
-            </div>
-            <div class="my-auto p-10" id="">
-              <p class="text-[32px] font-bold font-raleway" id="">NEW15</p>
-              <p class="text-[18px] font-raleway" id="">Coupon Code</p>
-            </div>
-          </div>
-
-          <div class="redishContainer bg-[#F78C9C] flex w-full rounded-3xl">
-            <div class="p-12" id="">
-              <p class="text-[40px] font-extrabold font-inter" id="">20% OFF</p>
-              <p class="text-[20px] font-bold font-inter" id="">
-                on your next purchase
-              </p>
-              <p class="text-[18px] font-inter" id="">use by January 2024</p>
-            </div>
-            <div class="" id="">
-              <img src="./images/cupon-devider.png" alt="" />
-            </div>
-            <div class="my-auto p-10" id="">
-              <p class="text-[32px] font-bold font-raleway" id="">Couple 20</p>
-              <p class="text-[18px] font-raleway" id="">Coupon Code</p>
-            </div>
+    <!-- banner section starts -->
+    <section class="banner" id="bannerSect">
+      <!-- daisyui hero <> -->
+      <div class="hero min-h-screen rounded-3xl" style="background-image: url(./images/banner.png)">
+        <div class="hero-overlay bg-opacity-10 rounded-3xl"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-lg">
+            <h1 class="mb-5 text-5xl font-bold leading-normal">
+              <span class="text-white" id="">End-to-End Travel with </span>
+              <br />
+              <span class="text-[#1DD100]" id="">P Paribahan</span>
+            </h1>
+            <p class="mb-5 leading-8 text-lg">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined
+              .
+            </p>
+            <a href="#phParibahanSect"><button class="btn bg-[#1DD100] hover:bg-[#1DD100] border-0 mt-4">
+                Buy Tickets
+              </button></a>
           </div>
         </div>
+      </div>
+      <!-- daisyui hero </> -->
+    </section>
+    <!-- banner section ends -->
 
-        <div class="text-center mx-auto my-10" id="">
-          <button
-            class="btn btn-outline border-[#1DD100] border-2 font-bold text-[#1DD100] hover:bg-white hover:text-[#1DD100] hover:border-[#1DD100] font-raleway"
-          >
-            See All Offers
-          </button>
+    <!-- stats sub-section <> -->
+    <!-- stats sub-section </> -->
+  </header>
+
+  <main class="main mx-auto" id="mainContainer">
+    <!-- best offers section starts -->
+    <section class="bestOffers container mx-auto my-16" id="bestOfferSect">
+      <h2 class="text-center font-raleway font-bold text-[40px] pb-12" id="bestOfferHeading">
+        Best offers for you
+      </h2>
+
+      <div class="couponsContainer lg:flex justify-between lg:gap-6 w-auto">
+        <div class="yellowContainer bg-yellow-500 flex w-full rounded-3xl">
+          <div class="p-12" id="">
+            <p class="text-[40px] font-extrabold font-inter" id="">15% OFF</p>
+            <p class="text-[20px] font-bold font-inter" id="">
+              on your next purchase
+            </p>
+            <p class="text-[18px] font-inter" id="">use by January 2024</p>
+          </div>
+          <div class="" id="">
+            <img src="./images/cupon-devider.png" alt="" />
+          </div>
+          <div class="my-auto p-10" id="">
+            <p class="text-[32px] font-bold font-raleway" id="">NEW15</p>
+            <p class="text-[18px] font-raleway" id="">Coupon Code</p>
+          </div>
         </div>
-      </section>
-      <!-- best offers section ends -->
 
-      <!-- phParibahan section starts -->
-      <section
-        class="phParibahan max-w-full mx-auto my-16 rounded-t-3xl bg-[#F7F8F8] pb-16 border-[#1DD100] border-2"
-        id="phParibahanSect"
-      >
-        <!-- phParibahanHead <s> -->
-        <div class="phParibahanHead container mx-auto text-center" id="">
-          <h3 class="text-[40px] font-bold font-raleway pt-32 pb-6" id="">
-            P.H Paribahan
-          </h3>
-          <p
-            class="max-w-[50%] mx-auto font-inter text-[18px] text-gray-500 mb-12"
-            id=""
-          >
-            Yes, you can run unit tests and view the results directly within the
-            app. The integrated testing features allow for a streamlined .
-          </p>
+        <div class="redishContainer bg-[#F78C9C] flex w-full rounded-3xl">
+          <div class="p-12" id="">
+            <p class="text-[40px] font-extrabold font-inter" id="">20% OFF</p>
+            <p class="text-[20px] font-bold font-inter" id="">
+              on your next purchase
+            </p>
+            <p class="text-[18px] font-inter" id="">use by January 2024</p>
+          </div>
+          <div class="" id="">
+            <img src="./images/cupon-devider.png" alt="" />
+          </div>
+          <div class="my-auto p-10" id="">
+            <p class="text-[32px] font-bold font-raleway" id="">Couple 20</p>
+            <p class="text-[18px] font-raleway" id="">Coupon Code</p>
+          </div>
         </div>
-        <!-- phParibahanHead </e> -->
+      </div>
 
-        <!-- phParibahanTop <s> -->
-        <div
-          class="container mx-auto bg-white rounded-3xl flex border-purple-400 border-2 mb-6"
-          id="phParibahanTopContainer"
-        >
-          <div class="p-8 w-[75%]" id="coachLeftSchedule">
-            <div class="" id="">
-              <div class="lg:flex justify-between mb-6" id="coachSeatLeft">
-                <div class="flex gap-4 jus" id="busLogoCoachDiv">
-                  <img src="./images/bus-logo.png" alt="" />
-                  <div class="" id="">
-                    <p class="font-raleway font-bold text-[32px]">
-                      Greenline Paribahan
-                    </p>
-                    <p class="font-inter text-[18px]">
-                      Coach-009-WEB ! AC_Business
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="btn bg-[#1DD1001A] text-[#1DD100] bg-opacity-10 text-lg hover:bg-white hover:border-green-500 font-inter font-semibold"
-                >
-                  <img src="./images/seat-green.png" alt="seat-icon" />
-                  <span class="" id="dynamicSeatLeft">40</span
-                  ><span class="" id=""> Seats Left</span>
+      <div class="text-center mx-auto my-10" id="">
+        <button
+          class="btn btn-outline border-[#1DD100] border-2 font-bold text-[#1DD100] hover:bg-white hover:text-[#1DD100] hover:border-[#1DD100] font-raleway">
+          See All Offers
+        </button>
+      </div>
+    </section>
+    <!-- best offers section ends -->
+
+    <!-- phParibahan section starts -->
+    <section class="phParibahan max-w-full mx-auto my-16 rounded-t-3xl bg-[#F7F8F8] pb-16" id="phParibahanSect">
+      <!-- phParibahanHead <s> -->
+      <div class="phParibahanHead container mx-auto text-center" id="">
+        <h3 class="text-[40px] font-bold font-raleway pt-32 pb-6" id="">
+          P.H Paribahan
+        </h3>
+        <p class="max-w-[50%] mx-auto font-inter text-[18px] text-gray-500 mb-12" id="">
+          Yes, you can run unit tests and view the results directly within the
+          app. The integrated testing features allow for a streamlined .
+        </p>
+      </div>
+      <!-- phParibahanHead </e> -->
+
+      <!-- phParibahanTop <s> -->
+      <div class="container mx-auto bg-white rounded-3xl flex mb-6" id="phParibahanTopContainer">
+        <div class="p-8 w-[75%]" id="coachLeftSchedule">
+          <div class="" id="">
+            <div class="lg:flex justify-between mb-6" id="coachSeatLeft">
+              <div class="flex gap-4 jus" id="busLogoCoachDiv">
+                <img src="./images/bus-logo.png" alt="" />
+                <div class="" id="">
+                  <p class="font-raleway font-bold text-[32px]">
+                    Greenline Paribahan
+                  </p>
+                  <p class="font-inter text-[18px]">
+                    Coach-009-WEB ! AC_Business
+                  </p>
                 </div>
               </div>
-            </div>
-
-            <div class="bg-[#F7F8F8] rounded-lg p-8" id="routeSchedule">
               <div
-                id="routeWrap"
-                class="flex justify-between font-raleway text-lg"
-              >
-                <div class="" id="">Route</div>
-                <div class="font-bold" id="">Dhaka - Sylhet</div>
-              </div>
-
-              <hr id="" class="border-dashed my-4" />
-
-              <div
-                id="departureWrap"
-                class="flex justify-between font-raleway text-lg"
-              >
-                <div id="" class="">Departure Time</div>
-                <div id="" class="font-bold">9:00 PM</div>
-              </div>
-
-              <hr id="" class="border-dashed my-4" />
-
-              <div
-                id="locationWrap"
-                class="flex justify-between font-inter font-semibold"
-              >
-                <div id="" class="bg-[#0307120D] rounded-lg p-4">
-                  Boarding Point - Laxmipur
-                </div>
-                <div id="" class="bg-[#0307120D] rounded-lg p-4">
-                  Dropping Point - Bogura
-                </div>
-                <div id="" class="bg-[#0307120D] rounded-lg p-4">
-                  Est. Time - 11 Hour
-                </div>
+                class="btn bg-[#1DD1001A] text-[#1DD100] bg-opacity-10 text-lg hover:bg-white hover:border-green-500 font-inter font-semibold">
+                <img src="./images/seat-green.png" alt="seat-icon" />
+                <span class="" id="dynamicSeatLeft">40</span><span class="" id=""> Seats Left</span>
               </div>
             </div>
           </div>
 
-          <div class="infoDivider2 max-w-20" id="">
-            <div class="" id="">
-              <img src="./images/info-devider.png" alt="" />
+          <div class="bg-[#F7F8F8] rounded-lg p-8" id="routeSchedule">
+            <div id="routeWrap" class="flex justify-between font-raleway text-lg">
+              <div class="" id="">Route</div>
+              <div class="font-bold" id="">Dhaka - Sylhet</div>
             </div>
-          </div>
 
-          <div
-            class="p-8 max-w-56 mx-auto my-auto text-center"
-            id="tkPerTicket"
-          >
-            <div class="" id="">
-              <div class="" id="">
-                <img src="./images/fare.png" class="mx-auto" alt="" />
+            <hr id="" class="border-dashed my-4" />
+
+            <div id="departureWrap" class="flex justify-between font-raleway text-lg">
+              <div id="" class="">Departure Time</div>
+              <div id="" class="font-bold">9:00 PM</div>
+            </div>
+
+            <hr id="" class="border-dashed my-4" />
+
+            <div id="locationWrap" class="flex justify-between font-inter font-semibold">
+              <div id="" class="bg-[#0307120D] rounded-lg p-4">
+                Boarding Point - Laxmipur
               </div>
-              <p class="font-raleway font-bold text-[32px]" id="">
-                <span class="" id="tkPerSeat">550</span
-                ><span class="" id=""> Taka</span>
-              </p>
-              <p
-                class="font-raleway font-semibold text-[24px] text-gray-500"
-                id=""
-              >
-                Per Seat
-              </p>
+              <div id="" class="bg-[#0307120D] rounded-lg p-4">
+                Dropping Point - Bogura
+              </div>
+              <div id="" class="bg-[#0307120D] rounded-lg p-4">
+                Est. Time - 11 Hour
+              </div>
             </div>
           </div>
         </div>
-        <!-- phParibahanTop </e> -->
 
-        <!-- phParibahanBottom <s> -->
-        <div
-          class="container mx-auto bg-white rounded-3xl flex border-purple-400 border-2 mb-6"
-          id="phParibahanBottomContainer"
-        >
-          <div
-            class="p-8 my-6 w-[60%] border-r-2 border-dashed"
-            id="seatSelection"
-          >
-            <div class="font-raleway font-bold text-2xl mb-6" id="">
-              <p id="" class="">Select Your Seat</p>
+        <div class="infoDivider2 max-w-20" id="">
+          <div class="" id="">
+            <img src="./images/info-devider.png" alt="" />
+          </div>
+        </div>
+
+        <div class="p-8 max-w-56 mx-auto my-auto text-center" id="tkPerTicket">
+          <div class="" id="">
+            <div class="" id="">
+              <img src="./images/fare.png" class="mx-auto" alt="" />
+            </div>
+            <p class="font-raleway font-bold text-[32px]" id="">
+              <span class="" id="tkPerSeat">550</span><span class="" id=""> Taka</span>
+            </p>
+            <p class="font-raleway font-semibold text-[24px] text-gray-500" id="">
+              Per Seat
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- phParibahanTop </e> -->
+
+      <!-- phParibahanBottom <s> -->
+      <div id="phParibahanBottomContainer" class="container mx-auto bg-white rounded-3xl flex mb-6">
+        <div class="p-8 my-6 w-[60%] border-r-2 border-dashed" id="seatSelection">
+          <div class="font-raleway font-bold text-2xl mb-6 pb-4 border-b-2 border-dashed" id="">
+            <p id="" class="">Select Your Seat</p>
+          </div>
+
+          <div class="lg:flex justify-between mb-6 border-b-2 border-dashed pb-4" id="">
+            <div class="btn text-lg bg-white border-0 hover:bg-white font-inter font-medium shadow-none">
+              <img src="./images/seat-gray.png" alt="filled-seat-icon" />
+              <span id="" class="">Available</span>
             </div>
 
             <div
-              class="lg:flex justify-between mb-6 border-y-2 border-dashed py-4"
-              id=""
-            >
-              <div
-                class="btn text-lg bg-white border-0 hover:bg-white font-inter font-medium shadow-none"
-              >
-                <img src="./images/seat-gray.png" alt="filled-seat-icon" />
-                <span id="" class="">Available</span>
-              </div>
-
-              <div
-                class="btn text-[#1DD100] text-lg bg-white border-0 hover:bg-white font-inter font-semibold shadow-none"
-              >
-                <img
-                  src="./images/seat-green-filled.png"
-                  alt="filled-seat-icon"
-                />
-                <span id="" class="">Selected</span>
-              </div>
+              class="btn text-[#1DD100] text-lg bg-white border-0 hover:bg-white font-inter font-semibold shadow-none">
+              <img src="./images/seat-green-filled.png" alt="filled-seat-icon" />
+              <span id="" class="">Selected</span>
             </div>
+          </div>
 
-            <div id="seatPlan" class="">
+          <div id="seatPlan" class="">
 
-              <div id="" class="flex justify-end">
-                <div
-                id="driverSeat"
-                class="h-14 w-28 p-4 bg-[#0307121A] rounded-lg flex justify-center"
-              >
+            <div id="" class="flex justify-end">
+              <div id="driverSeat" class="h-14 w-28 p-4 mb-6 mr-2 bg-[#0307121A] rounded-lg flex justify-center">
                 <img src="./images/vector.png" class="" alt="" />
               </div>
+            </div>
+
+            <div id="seatTable" class="">
+              <div id="" class="grid grid-cols-5 grid-rows-5 gap-6 font-inter text-lg font-medium">
+                <div class="series flex justify-center items-center" id="">A</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">A1</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">A2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">A3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">A4</div>
+
+                <div class="series flex justify-center items-center" id="">B</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">B1</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">B2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">B3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">B4</div>
+
+                <div class="series flex justify-center items-center" id="">C</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">C1</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">C2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">C3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">C4</div>
+
+                <div class="series flex justify-center items-center" id="">D</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">D1</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">D2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">D3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">D4</div>
+
+                <div class="series flex justify-center items-center" id="">E</div>
+                <div class="seat bg-[#1DD100] text-white rounded-md h-14 w-28 flex justify-center items-center" id="">E1
+                </div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">E2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">E3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">E4</div>
+
+                <div class="series flex justify-center items-center" id="">F</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">F1</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">F2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">F3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">F4</div>
+
+                <div class="series flex justify-center items-center" id="">G</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">G1</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">G2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">G3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">G4</div>
+
+                <div class="series flex justify-center items-center" id="">H</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">H1</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">H2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">H3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">H4</div>
+
+                <div class="series flex justify-center items-center" id="">I</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">I1</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">I2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">I3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">I4</div>
+
+                <div class="series flex justify-center items-center" id="">J</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">J1</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">J2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">J3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">J4</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="cartCouponCheckout" class="p-8 w-2/5 mx-auto">
+
+          <div class="font-raleway font-bold text-2xl my-6 pb-4 border-b-2 border-dashed" id="">
+            <p id="" class="">Select Your Seat</p>
+          </div>
+
+          <div id="" class="">eee</div>
+
+          <div id="" class="">
+
+            <form class="max-w-md mx-auto">
+              <div class="grid grid-cols-1">
+                <div class="relative z-0 w-full mb-5 group">
+                  <label for="floatingName" class="font-inter font-bold">
+                    Passenger Name*
+                  </label>
+                  <input type="text" name="floatingName" id="floatingName"
+                    class="block py-2.5 px-3 w-full text-md text-gray-500 bg-transparent border-gray-300 appearance-none f peer border-2 rounded-md p-2 w-full"
+                    placeholder="Enter your name" required />
+                </div>
               </div>
 
-              <div id="seatTable" class=""></div>
+              <div class="grid grid-cols-1">
+                <div class="relative z-0 w-full mb-5 group">
+                  <label for="floatingPhone" class="font-inter font-bold">
+                    Phone Number*
+                  </label>
+                  <input type="tel" name="floatingPhone" id="floatingPhone"
+                    class="block py-2.5 px-3 w-full text-md text-gray-900 bg-transparent border-0 border-gray-300 appearance-none peer border-2 rounded-md p-2 w-full"
+                    placeholder="Enter your phone number" required />
+                </div>
+              </div>
+
+              <div class="relative z-0 w-full mb-6 group">
+                <label for="floatingEmail" class="font-inter font-bold">
+                  Email ID
+                </label>
+                <input type="email" name="floatingEmail" id="floatingEmail"
+                  class="block py-2.5 px-3 w-full text-md text-gray-900 bg-transparent border-gray-300 appearance-none peer border-2 rounded-md p-2 w-full"
+                  placeholder="Enter your email id" required />
+              </div>
+
+              <button type="button" id="nextSuccessBtn" onclick="document.getElementById('myModal1').showModal()"
+                class="text-white bg-[#1DD100] hover:bg-[#1DD100] font-medium rounded-lg text-md w-full px-5 py-2.5 text-center btn">
+                Next
+              </button>
+            </form>
+          </div>
+
+          <div id="tocCp" class="flex justify-center gap-x-4 underline mt-6 font-inter text-base">
+            <div id="toc">
+              <a href="#">Terms and Conditions</a>
+            </div>
+            <div id="cp">
+              <a href="#">Cancellation Policy</a>
             </div>
           </div>
 
-          <div id="" class="p-8 max-w-56 mx-auto my-auto text-center"></div>
         </div>
-        <!-- phParibahanBottom </e> -->
-      </section>
-      <!-- phParibahan section ends -->
-    </main>
-
-    <!-- footer section starts -->
-    <footer class="footer container max-w-full" id="footerContainer">
-      <section
-        id="footerSect"
-        class="footer w-full bg-black text-white py-32 min-h-28"
-      >
-        <div class="mx-auto" id=""># optional footer</div>
-        <hr class="" />
-        <div class="" id=""># optional footer</div>
-      </section>
-    </footer>
-    <!-- footer section ends -->
-
-    <!-- modal section starts -->
-    <section class="modal hidden" id="modalSect">
-      <!-- Open the modal using ID.showModal() method -->
-      <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
-      <dialog id="my_modal_1" class="modal">
-        <div class="modal-box">
-          <h3 class="font-bold text-lg">Hello!</h3>
-          <p class="py-4">Press ESC key or click the button below to close</p>
-          <div class="modal-action">
-            <form method="dialog">
-              <!-- if there is a button in form, it will close the modal -->
-              <button class="btn">Close</button>
-            </form>
-          </div>
-        </div>
-      </dialog>
+      </div>
+      <!-- phParibahanBottom </e> -->
     </section>
-    <!-- modal section ends -->
+    <!-- phParibahan section ends -->
+  </main>
 
-    <!-- <br /> -->
-    <!-- JavaScript files linked here -->
-    <script src="./script.js"></script>
-  </body>
+  <!-- footer section starts -->
+  <footer class="footer container max-w-full" id="footerContainer">
+    <section id="footerSect" class="footer w-full bg-black text-white py-32 min-h-28">
+      <div class="mx-auto" id=""># optional footer</div>
+      <hr class="" />
+      <div class="" id=""># optional footer</div>
+    </section>
+  </footer>
+  <!-- footer section ends -->
+
+  <!-- modal section starts -->
+  <section class="modal text-center font-roboto" id="modalSect">
+    <!-- Open the modal using ID.showModal() method -->
+    <button class="btn" onclick="document.getElementById('myModal1').showModal()">open modal</button>
+    <dialog id="myModal1" class="modal">
+      <div class="modal-box ">
+        <p class="flex justify-center"><img src="./images/success.png" alt=""></p>
+        <h3 class="font-bold text-lg #27AE60 my-6">SUCCESS</h3>
+        <p class="py-4 font-bold">Thank you for Booking Our Bus Seats.
+          <br>We are working hard to find the best service and deals for you.</p>
+        <p class="py-4">Shortly you will find a confirmation in your email.</p>
+        <div class="modal-action flex justify-center">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button type="submit" class="btn bg-[#27AE60] text-white w-80 rounded-3xl font-roboto text-xl">Continue</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+  </section>
+  <!-- modal section ends -->
+
+  <!-- <br /> -->
+  <!-- JavaScript files linked here -->
+  <script src="./script.js"></script>
+</body>
+
 </html>
