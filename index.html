@@ -13,13 +13,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- font-awesome -->
-    <!-- <script
-      src="https://kit.fontawesome.com/32c961cccf.js"
-      crossorigin="anonymous"
-    ></script> -->
-
-    <!-- google font manrope -->
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,18 +37,12 @@
         color: #030712;
       }
     </style>
-
   </head>
   <body class="">
-    
+    <!-- <body class="lg:max-w-[1170px] lg:mx-auto"> -->
     <header class="header container mx-auto mb-14" id="headerContainer">
       <!-- navbar section starts -->
       <section class="navbar" id="menuSect">
-        <!-- <div class="" id="">Company Name</div> -->
-        <!-- optional menu list -->
-        <!-- <div class="" id="">Menu List</div>
-        <div class="" id="">Bus Logo</div> -->
-
         <!-- 1. navbar (bonus) section starts -->
         <nav class="navbar" id="">
           <div class="navbar bg-white">
@@ -139,7 +127,9 @@
                 .
               </p>
               <a href="#phParibahanSect"
-                ><button class="btn bg-[#1DD100] hover:bg-[#1DD100] border-0 mt-4">
+                ><button
+                  class="btn bg-[#1DD100] hover:bg-[#1DD100] border-0 mt-4"
+                >
                   Buy Tickets
                 </button></a
               >
@@ -157,7 +147,12 @@
     <main class="main mx-auto border-red-600 border-2" id="mainContainer">
       <!-- best offers section starts -->
       <section class="bestOffers container mx-auto my-16" id="bestOfferSect">
-        <h2 class="text-center font-raleway font-bold text-[40px] pb-12" id="bestOfferHeading">Best offers for you</h2>
+        <h2
+          class="text-center font-raleway font-bold text-[40px] pb-12"
+          id="bestOfferHeading"
+        >
+          Best offers for you
+        </h2>
 
         <div class="couponsContainer lg:flex justify-between lg:gap-6 w-auto">
           <div class="yellowContainer bg-yellow-500 flex w-full rounded-3xl">
@@ -207,23 +202,183 @@
 
       <!-- phParibahan section starts -->
       <section
-        class="phParibahan max-w-full mx-auto my-16 rounded-t-3xl bg-[#F7F8F8] border-[#1DD100] border-2"
+        class="phParibahan max-w-full mx-auto my-16 rounded-t-3xl bg-[#F7F8F8] pb-16 border-[#1DD100] border-2"
         id="phParibahanSect"
       >
-        <div class="container mx-auto" id="">
-          <h3 class="" id="">P.H Paribahan</h3>
-          <p class="" id="">
+        <!-- phParibahanHead <s> -->
+        <div class="phParibahanHead container mx-auto text-center" id="">
+          <h3 class="text-[40px] font-bold font-raleway pt-32 pb-6" id="">
+            P.H Paribahan
+          </h3>
+          <p
+            class="max-w-[50%] mx-auto font-inter text-[18px] text-gray-500 mb-12"
+            id=""
+          >
             Yes, you can run unit tests and view the results directly within the
             app. The integrated testing features allow for a streamlined .
           </p>
         </div>
+        <!-- phParibahanHead </e> -->
+
+        <!-- phParibahanTop <s> -->
+        <div
+          class="container mx-auto bg-white rounded-3xl flex border-purple-400 border-2 mb-6"
+          id="phParibahanTopContainer"
+        >
+          <div class="p-8 w-[75%]" id="coachLeftSchedule">
+            <div class="" id="">
+              <div class="lg:flex justify-between mb-6" id="coachSeatLeft">
+                <div class="flex gap-4 jus" id="busLogoCoachDiv">
+                  <img src="./images/bus-logo.png" alt="" />
+                  <div class="" id="">
+                    <p class="font-raleway font-bold text-[32px]">
+                      Greenline Paribahan
+                    </p>
+                    <p class="font-inter text-[18px]">
+                      Coach-009-WEB ! AC_Business
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="btn bg-[#1DD1001A] text-[#1DD100] bg-opacity-10 text-lg hover:bg-white hover:border-green-500 font-inter font-semibold"
+                >
+                  <img src="./images/seat-green.png" alt="seat-icon" />
+                  <span class="" id="dynamicSeatLeft">40</span
+                  ><span class="" id=""> Seats Left</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#F7F8F8] rounded-lg p-8" id="routeSchedule">
+              <div
+                id="routeWrap"
+                class="flex justify-between font-raleway text-lg"
+              >
+                <div class="" id="">Route</div>
+                <div class="font-bold" id="">Dhaka - Sylhet</div>
+              </div>
+
+              <hr id="" class="border-dashed my-4" />
+
+              <div
+                id="departureWrap"
+                class="flex justify-between font-raleway text-lg"
+              >
+                <div id="" class="">Departure Time</div>
+                <div id="" class="font-bold">9:00 PM</div>
+              </div>
+
+              <hr id="" class="border-dashed my-4" />
+
+              <div
+                id="locationWrap"
+                class="flex justify-between font-inter font-semibold"
+              >
+                <div id="" class="bg-[#0307120D] rounded-lg p-4">
+                  Boarding Point - Laxmipur
+                </div>
+                <div id="" class="bg-[#0307120D] rounded-lg p-4">
+                  Dropping Point - Bogura
+                </div>
+                <div id="" class="bg-[#0307120D] rounded-lg p-4">
+                  Est. Time - 11 Hour
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="infoDivider2 max-w-20" id="">
+            <div class="" id="">
+              <img src="./images/info-devider.png" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="p-8 max-w-56 mx-auto my-auto text-center"
+            id="tkPerTicket"
+          >
+            <div class="" id="">
+              <div class="" id="">
+                <img src="./images/fare.png" class="mx-auto" alt="" />
+              </div>
+              <p class="font-raleway font-bold text-[32px]" id="">
+                <span class="" id="tkPerSeat">550</span
+                ><span class="" id=""> Taka</span>
+              </p>
+              <p
+                class="font-raleway font-semibold text-[24px] text-gray-500"
+                id=""
+              >
+                Per Seat
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- phParibahanTop </e> -->
+
+        <!-- phParibahanBottom <s> -->
+        <div
+          class="container mx-auto bg-white rounded-3xl flex border-purple-400 border-2 mb-6"
+          id="phParibahanBottomContainer"
+        >
+          <div
+            class="p-8 my-6 w-[60%] border-r-2 border-dashed"
+            id="seatSelection"
+          >
+            <div class="font-raleway font-bold text-2xl mb-6" id="">
+              <p id="" class="">Select Your Seat</p>
+            </div>
+
+            <div
+              class="lg:flex justify-between mb-6 border-y-2 border-dashed py-4"
+              id=""
+            >
+              <div
+                class="btn text-lg bg-white border-0 hover:bg-white font-inter font-medium shadow-none"
+              >
+                <img src="./images/seat-gray.png" alt="filled-seat-icon" />
+                <span id="" class="">Available</span>
+              </div>
+
+              <div
+                class="btn text-[#1DD100] text-lg bg-white border-0 hover:bg-white font-inter font-semibold shadow-none"
+              >
+                <img
+                  src="./images/seat-green-filled.png"
+                  alt="filled-seat-icon"
+                />
+                <span id="" class="">Selected</span>
+              </div>
+            </div>
+
+            <div id="seatPlan" class="">
+
+              <div id="" class="flex justify-end">
+                <div
+                id="driverSeat"
+                class="h-14 w-28 p-4 bg-[#0307121A] rounded-lg flex justify-center"
+              >
+                <img src="./images/vector.png" class="" alt="" />
+              </div>
+              </div>
+
+              <div id="seatTable" class=""></div>
+            </div>
+          </div>
+
+          <div id="" class="p-8 max-w-56 mx-auto my-auto text-center"></div>
+        </div>
+        <!-- phParibahanBottom </e> -->
       </section>
       <!-- phParibahan section ends -->
     </main>
 
     <!-- footer section starts -->
     <footer class="footer container max-w-full" id="footerContainer">
-      <section class="footer w-full bg-black text-white" id="footerSect">
+      <section
+        id="footerSect"
+        class="footer w-full bg-black text-white py-32 min-h-28"
+      >
         <div class="mx-auto" id=""># optional footer</div>
         <hr class="" />
         <div class="" id=""># optional footer</div>
