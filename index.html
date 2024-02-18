@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B9A5 - Smart Ticketing System</title>
-    
+
     <!-- tailwindcss & daisyui -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
@@ -20,24 +20,238 @@
     ></script> -->
 
     <!-- google font manrope -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
-    /> -->
+    />
 
-    <!-- <style>
-      .font-manrope {
-        font-family: "Manrope", sans-serif;
+    <style>
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+      .font-raleway {
+        font-family: "Raleway", sans-serif;
+      }
+      .font-Rroboto {
+        font-family: "Roboto", sans-serif;
       }
 
       body {
-        font-family: "Manrope", sans-serif;
+        font-family: "Roboto", sans-serif;
+        color: #030712;
       }
-    </style> -->
+    </style>
+
   </head>
-  <body>
+  <body class="">
+    
+    <header class="header container mx-auto mb-14" id="headerContainer">
+      <!-- navbar section starts -->
+      <section class="navbar" id="menuSect">
+        <!-- <div class="" id="">Company Name</div> -->
+        <!-- optional menu list -->
+        <!-- <div class="" id="">Menu List</div>
+        <div class="" id="">Bus Logo</div> -->
+
+        <!-- 1. navbar (bonus) section starts -->
+        <nav class="navbar" id="">
+          <div class="navbar bg-white">
+            <div class="navbar-start justify-between lg:justify-normal">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <!-- sm screen menu -->
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Destination</a></li>
+                  <li><a>Search</a></li>
+                </ul>
+              </div>
+
+              <div class="">
+                <a class="text-2xl lg:text-4xl font-extrabold"
+                  ><span class="text-[36px] font-raleway">P-Ticket</span></a
+                >
+              </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <!-- lg screen menu -->
+              <ul class="menu menu-horizontal px-1 text-lg">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+
+            <div class="navbar-end">
+              <div class="navbar-end w-32">
+                <a
+                  class="btn border-green-500 bg-[#1DD1001A] text-[#1DD100] bg-opacity-10 text-lg hover:bg-white hover:border-green-500"
+                  >Bus <img src="./images/bus-icon.png" alt="bus-icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- navbar ends -->
+      </section>
+      <!-- navbar section ends -->
+
+      <!-- banner section starts -->
+      <section class="banner" id="bannerSect">
+        <!-- daisyui hero <> -->
+        <div
+          class="hero min-h-screen rounded-3xl"
+          style="background-image: url(./images/banner.png)"
+        >
+          <div class="hero-overlay bg-opacity-10 rounded-3xl"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-lg">
+              <h1 class="mb-5 text-5xl font-bold leading-normal">
+                <span class="text-white" id="">End-to-End Travel with </span>
+                <br />
+                <span class="text-[#1DD100]" id="">P Paribahan</span>
+              </h1>
+              <p class="mb-5 leading-8 text-lg">
+                Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a streamlined
+                .
+              </p>
+              <a href="#phParibahanSect"
+                ><button class="btn bg-[#1DD100] hover:bg-[#1DD100] border-0 mt-4">
+                  Buy Tickets
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- daisyui hero </> -->
+      </section>
+      <!-- banner section ends -->
+
+      <!-- stats sub-section <> -->
+      <!-- stats sub-section </> -->
+    </header>
+
+    <main class="main mx-auto border-red-600 border-2" id="mainContainer">
+      <!-- best offers section starts -->
+      <section class="bestOffers container mx-auto my-16" id="bestOfferSect">
+        <h2 class="text-center font-raleway font-bold text-[40px] pb-12" id="bestOfferHeading">Best offers for you</h2>
+
+        <div class="couponsContainer lg:flex justify-between lg:gap-6 w-auto">
+          <div class="yellowContainer bg-yellow-500 flex w-full rounded-3xl">
+            <div class="p-12" id="">
+              <p class="text-[40px] font-extrabold font-inter" id="">15% OFF</p>
+              <p class="text-[20px] font-bold font-inter" id="">
+                on your next purchase
+              </p>
+              <p class="text-[18px] font-inter" id="">use by January 2024</p>
+            </div>
+            <div class="" id="">
+              <img src="./images/cupon-devider.png" alt="" />
+            </div>
+            <div class="my-auto p-10" id="">
+              <p class="text-[32px] font-bold font-raleway" id="">NEW15</p>
+              <p class="text-[18px] font-raleway" id="">Coupon Code</p>
+            </div>
+          </div>
+
+          <div class="redishContainer bg-[#F78C9C] flex w-full rounded-3xl">
+            <div class="p-12" id="">
+              <p class="text-[40px] font-extrabold font-inter" id="">20% OFF</p>
+              <p class="text-[20px] font-bold font-inter" id="">
+                on your next purchase
+              </p>
+              <p class="text-[18px] font-inter" id="">use by January 2024</p>
+            </div>
+            <div class="" id="">
+              <img src="./images/cupon-devider.png" alt="" />
+            </div>
+            <div class="my-auto p-10" id="">
+              <p class="text-[32px] font-bold font-raleway" id="">Couple 20</p>
+              <p class="text-[18px] font-raleway" id="">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mx-auto my-10" id="">
+          <button
+            class="btn btn-outline border-[#1DD100] border-2 font-bold text-[#1DD100] hover:bg-white hover:text-[#1DD100] hover:border-[#1DD100] font-raleway"
+          >
+            See All Offers
+          </button>
+        </div>
+      </section>
+      <!-- best offers section ends -->
+
+      <!-- phParibahan section starts -->
+      <section
+        class="phParibahan max-w-full mx-auto my-16 rounded-t-3xl bg-[#F7F8F8] border-[#1DD100] border-2"
+        id="phParibahanSect"
+      >
+        <div class="container mx-auto" id="">
+          <h3 class="" id="">P.H Paribahan</h3>
+          <p class="" id="">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features allow for a streamlined .
+          </p>
+        </div>
+      </section>
+      <!-- phParibahan section ends -->
+    </main>
+
+    <!-- footer section starts -->
+    <footer class="footer container max-w-full" id="footerContainer">
+      <section class="footer w-full bg-black text-white" id="footerSect">
+        <div class="mx-auto" id=""># optional footer</div>
+        <hr class="" />
+        <div class="" id=""># optional footer</div>
+      </section>
+    </footer>
+    <!-- footer section ends -->
+
+    <!-- modal section starts -->
+    <section class="modal hidden" id="modalSect">
+      <!-- Open the modal using ID.showModal() method -->
+      <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+      <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+          <h3 class="font-bold text-lg">Hello!</h3>
+          <p class="py-4">Press ESC key or click the button below to close</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+    </section>
+    <!-- modal section ends -->
+
+    <!-- <br /> -->
+    <!-- JavaScript files linked here -->
     <script src="./script.js"></script>
   </body>
 </html>

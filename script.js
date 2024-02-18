@@ -1,1 +1,1 @@
-alert('angta lege gese, mamma');
+// alert('angta lege gese, mamma');
