@@ -34,6 +34,25 @@
       font-family: "Roboto", sans-serif;
       color: #030712;
     }
+
+    table {
+      width: 100%;
+      letter-spacing: 1px;
+      table-layout: auto;
+    }
+
+    thead {
+      font-weight: bold;
+    }
+
+    tr {
+      /* # */
+    }
+
+    td {
+      padding: 10px;
+      text-align: center;
+    }
   </style>
 </head>
 
@@ -357,13 +376,73 @@
           </div>
         </div>
 
-        <div id="cartCouponCheckout" class="p-8 w-2/5 mx-auto">
+        <div id="cartCouponTotalCheckout" class="p-8 w-2/5 mx-auto">
 
           <div class="font-raleway font-bold text-2xl my-6 pb-4 border-b-2 border-dashed" id="">
             <p id="" class="">Select Your Seat</p>
           </div>
 
-          <div id="" class="">eee</div>
+          <div id="cartCouponTotal" class="mb-6 bg-[#F7F8F8] rounded-xl p-8 font-inter text-base">
+
+            <div id="cart" class="">
+              <table id="cartTable" class="font-inter">
+                <thead>
+                  <tr class="font-bold border-b-2 border-dashed">
+                    <th scope="col" class="">
+                      <span id="" class="">Seat </span>
+                      <sup class="bg-green-500 p-2 text-white rounded-lg"><span id="dynamicCartCount" class="">2</span></sup>
+                    </th>
+                    <th scope="col" class="">Class</th>
+                    <th scope="col" class="">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- dynamic seat selection goes below -->
+                  <tr>
+                    <!-- <td>C2</td>
+                    <td>Economy</td>
+                    <td>550</td> -->
+                  </tr>
+                  <tr>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                </tbody>
+                <tfoot class="font-bold">
+                  <tr class="mt-4">
+                    <th>Total Price</th>
+                    <td> </td>
+                    <td><span>BDT </span><span id="dynamicTotalPrice">0</span></td>
+                  </tr>
+                </tfoot>
+              </table>
+
+              <!-- <hr> -->
+            </div>
+
+            <!-- <hr> -->
+
+            <div id="coupon" class="flex justify-center mt-4 mb-6">
+              <div class="join">
+                <input id="couponValue" class="input input-bordered join-item" placeholder="Have any copupon?" />
+                <button id="" onclick="" class="btn join-item rounded-lg bg-[#1DD100] text-white">Apply</button>
+              </div>
+            </div>
+
+            <div id="grandTotal" class="">
+              <table>
+                <tfoot class="font-bold">
+                  <tr class="">
+                    <th>Grand Total</th>
+                    <td> </td>
+                    <td><span>BDT </span><span id="dynamicGrandTotalPrice">0</span></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+          </div>
 
           <div id="" class="">
 
@@ -399,7 +478,7 @@
                   placeholder="Enter your email id" required />
               </div>
 
-              <button type="button" id="nextSuccessBtn" onclick="document.getElementById('myModal1').showModal()"
+              <button type="submit" id="nextSuccessBtn" onclick="document.getElementById('myModal1').showModal()"
                 class="text-white bg-[#1DD100] hover:bg-[#1DD100] font-medium rounded-lg text-md w-full px-5 py-2.5 text-center btn">
                 Next
               </button>
@@ -425,9 +504,9 @@
   <!-- footer section starts -->
   <footer class="footer container max-w-full" id="footerContainer">
     <section id="footerSect" class="footer w-full bg-black text-white py-32 min-h-28">
-      <div class="mx-auto" id=""># optional footer</div>
+      <div class="mx-auto text-black" id=""># optional footer</div>
       <hr class="" />
-      <div class="" id=""># optional footer</div>
+      <div class="text-black" id=""># optional footer</div>
     </section>
   </footer>
   <!-- footer section ends -->
@@ -441,12 +520,14 @@
         <p class="flex justify-center"><img src="./images/success.png" alt=""></p>
         <h3 class="font-bold text-lg #27AE60 my-6">SUCCESS</h3>
         <p class="py-4 font-bold">Thank you for Booking Our Bus Seats.
-          <br>We are working hard to find the best service and deals for you.</p>
+          <br>We are working hard to find the best service and deals for you.
+        </p>
         <p class="py-4">Shortly you will find a confirmation in your email.</p>
         <div class="modal-action flex justify-center">
           <form method="dialog">
             <!-- if there is a button in form, it will close the modal -->
-            <button type="submit" class="btn bg-[#27AE60] text-white w-80 rounded-3xl font-roboto text-xl">Continue</button>
+            <button type="button"
+              class="btn bg-[#27AE60] text-white w-80 rounded-3xl font-roboto text-xl">Continue</button>
           </form>
         </div>
       </div>
