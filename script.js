@@ -97,3 +97,18 @@ for (let i = 0; i < shobSeat.length; i++) {
 applyCoupon.addEventListener('click', function () {
     priceUpdates();
 });
+
+// modal close korle page reload. inline-e use koray ekhane comment out kora holo 
+// function pageReload() {
+//     window.location.reload()
+// }
+
+// Next button-er shathe modal connect korar cheshta 
+
+document.getElementById('nextSuccessBtn').addEventListener('click', function(){
+    if (document.getElementById('name') === "" || document.getElementById('phone') === "" || document.getElementById('email') === "") {
+        alert('Required field alert! Form-er shobgulo field obosshoi puron korte hobe.');
+        return;
+    }
+    document.getElementById('myModal1').showModal();
+});
