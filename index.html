@@ -53,6 +53,10 @@
       padding: 10px;
       text-align: center;
     }
+
+    .selected {
+      background-color: #1DD100;
+    }
   </style>
 </head>
 
@@ -82,7 +86,7 @@
             </div>
 
             <div class="">
-              <a class="text-2xl lg:text-4xl font-extrabold"><span class="text-[36px] font-raleway">P-Ticket</span></a>
+              <a class="text-2xl lg:text-4xl font-extrabold"><span class="md:text-3xl text-2xl font-raleway">P-Ticket</span></a>
             </div>
           </div>
           <div class="navbar-center hidden lg:flex">
@@ -96,7 +100,7 @@
           </div>
 
           <div class="navbar-end">
-            <div class="navbar-end w-32">
+            <div class="navbar-end md:w-32 w-28">
               <a
                 class="btn border-green-500 bg-[#1DD1001A] text-[#1DD100] bg-opacity-10 text-lg hover:bg-white hover:border-green-500">Bus
                 <img src="./images/bus-icon.png" alt="bus-icon" /></a>
@@ -109,12 +113,12 @@
     <!-- navbar section ends -->
 
     <!-- banner section starts -->
-    <section class="banner" id="bannerSect">
+    <section class="banner mx-4 md:mx-0" id="bannerSect">
       <!-- daisyui hero <> -->
       <div class="hero min-h-screen rounded-3xl" style="background-image: url(./images/banner.png)">
         <div class="hero-overlay bg-opacity-10 rounded-3xl"></div>
         <div class="hero-content text-center text-neutral-content">
-          <div class="max-w-lg">
+          <div class="max-w-md md:max-w-lg">
             <h1 class="mb-5 text-5xl font-bold leading-normal">
               <span class="text-white" id="">End-to-End Travel with </span>
               <br />
@@ -164,7 +168,7 @@
           </div>
         </div>
 
-        <div class="redishContainer bg-[#F78C9C] flex w-full rounded-3xl">
+        <div class="redishContainer bg-[#F78C9C] flex w-full rounded-3xl mt-6 lg:mt-0">
           <div class="p-12" id="">
             <p class="text-[40px] font-extrabold font-inter" id="">20% OFF</p>
             <p class="text-[20px] font-bold font-inter" id="">
@@ -210,7 +214,7 @@
         <div class="p-8 w-[75%]" id="coachLeftSchedule">
           <div class="" id="">
             <div class="lg:flex justify-between mb-6" id="coachSeatLeft">
-              <div class="flex gap-4 jus" id="busLogoCoachDiv">
+              <div class="flex gap-4 justify-center items-center" id="busLogoCoachDiv">
                 <img src="./images/bus-logo.png" alt="" />
                 <div class="" id="">
                   <p class="font-raleway font-bold text-[32px]">
@@ -281,8 +285,8 @@
       <!-- phParibahanTop </e> -->
 
       <!-- phParibahanBottom <s> -->
-      <div id="phParibahanBottomContainer" class="container mx-auto bg-white rounded-3xl flex mb-6">
-        <div class="p-8 my-6 w-[60%] border-r-2 border-dashed" id="seatSelection">
+      <div id="phParibahanBottomContainer" class="container mx-auto bg-white rounded-3xl flex flex-col md:flex-row mb-6">
+        <div class="p-8 my-6 md:w-[60%] border-r-2 border-dashed" id="seatSelection">
           <div class="font-raleway font-bold text-2xl mb-6 pb-4 border-b-2 border-dashed" id="">
             <p id="" class="">Select Your Seat</p>
           </div>
@@ -302,8 +306,8 @@
 
           <div id="seatPlan" class="">
 
-            <div id="" class="flex justify-end">
-              <div id="driverSeat" class="h-14 w-28 p-4 mb-6 mr-2 bg-[#0307121A] rounded-lg flex justify-center">
+            <div id="" class="flex justify-end lg:mr-4">
+              <div id="driverSeat" class="h-12 w-12 md:w-24 p-4 mb-6 mr-2 bg-[#0307121A] rounded-lg flex justify-center">
                 <img src="./images/vector.png" class="" alt="" />
               </div>
             </div>
@@ -311,78 +315,78 @@
             <div id="seatTable" class="">
               <div id="" class="grid grid-cols-5 grid-rows-5 gap-6 font-inter text-lg font-medium">
                 <div class="series flex justify-center items-center" id="">A</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">A1</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">A2</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">A3</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">A4</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">A1</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">A2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">A3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">A4</div>
 
                 <div class="series flex justify-center items-center" id="">B</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">B1</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">B2</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">B3</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">B4</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">B1</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">B2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">B3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">B4</div>
 
                 <div class="series flex justify-center items-center" id="">C</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">C1</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">C2</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">C3</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">C4</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">C1</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">C2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">C3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">C4</div>
 
                 <div class="series flex justify-center items-center" id="">D</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">D1</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">D2</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">D3</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">D4</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">D1</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">D2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">D3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">D4</div>
 
                 <div class="series flex justify-center items-center" id="">E</div>
-                <div class="seat bg-[#1DD100] text-white rounded-md h-14 w-28 flex justify-center items-center" id="">E1
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">E1
                 </div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">E2</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">E3</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">E4</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">E2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">E3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">E4</div>
 
                 <div class="series flex justify-center items-center" id="">F</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">F1</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">F2</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">F3</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">F4</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">F1</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">F2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">F3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">F4</div>
 
                 <div class="series flex justify-center items-center" id="">G</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">G1</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">G2</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">G3</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">G4</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">G1</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">G2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">G3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">G4</div>
 
                 <div class="series flex justify-center items-center" id="">H</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">H1</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">H2</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">H3</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">H4</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">H1</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">H2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">H3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">H4</div>
 
                 <div class="series flex justify-center items-center" id="">I</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">I1</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">I2</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">I3</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">I4</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">I1</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">I2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">I3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">I4</div>
 
                 <div class="series flex justify-center items-center" id="">J</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">J1</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">J2</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">J3</div>
-                <div class="seat bg-[#F7F8F8] rounded-md h-14 w-28 flex justify-center items-center" id="">J4</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">J1</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">J2</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">J3</div>
+                <div class="seat bg-[#F7F8F8] rounded-md h-12 w-12 md:w-24 flex justify-center items-center" id="">J4</div>
               </div>
             </div>
 
           </div>
         </div>
 
-        <div id="cartCouponTotalCheckout" class="p-8 w-2/5 mx-auto">
+        <div id="cartCouponTotalCheckout" class="p-8 md:w-2/5 mx-auto">
 
           <div class="font-raleway font-bold text-2xl my-6 pb-4 border-b-2 border-dashed" id="">
             <p id="" class="">Select Your Seat</p>
           </div>
 
-          <div id="cartCouponTotal" class="mb-6 bg-[#F7F8F8] rounded-xl p-8 font-inter text-base">
+          <div id="cartCouponTotal" class="mb-6 bg-[#F7F8F8] rounded-xl p-8 font-inter text-base md:max-w-full">
 
             <div id="cart" class="">
               <table id="cartTable" class="font-inter">
@@ -390,13 +394,14 @@
                   <tr class="font-bold border-b-2 border-dashed">
                     <th scope="col" class="">
                       <span id="" class="">Seat </span>
-                      <sup class="bg-green-500 p-2 text-white rounded-lg"><span id="dynamicCartCount" class="">2</span></sup>
+                      <sup class="bg-green-500 px-2 py-1 text-white rounded-full"><span id="dynamicCartCount"
+                          class="">0</span></sup>
                     </th>
                     <th scope="col" class="">Class</th>
                     <th scope="col" class="">Price</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody id="cartTableBody">
                   <!-- dynamic seat selection goes below -->
                   <tr>
                     <!-- <td>C2</td>
@@ -423,10 +428,12 @@
 
             <!-- <hr> -->
 
-            <div id="coupon" class="flex justify-center mt-4 mb-6">
+            <div id="couponDiv" class="flex justify-center mt-4 mb-6 max-w-full">
               <div class="join">
-                <input id="couponValue" class="input input-bordered join-item" placeholder="Have any copupon?" />
-                <button id="" onclick="" class="btn join-item rounded-lg bg-[#1DD100] text-white">Apply</button>
+                <input id="couponValue" disabled="true" class="input input-bordered join-item"
+                  placeholder="Have any copupon?" type="text" />
+                <button id="applyCoupon" onclick=""
+                  class="btn join-item rounded-lg bg-[#1DD100] text-white">Apply</button>
               </div>
             </div>
 
@@ -444,42 +451,43 @@
 
           </div>
 
-          <div id="" class="">
 
+
+          <div id="formDiv" class="">
             <form class="max-w-md mx-auto">
               <div class="grid grid-cols-1">
                 <div class="relative z-0 w-full mb-5 group">
-                  <label for="floatingName" class="font-inter font-bold">
+                  <label for="name" class="font-inter font-bold">
                     Passenger Name*
                   </label>
-                  <input type="text" name="floatingName" id="floatingName"
-                    class="block py-2.5 px-3 w-full text-md text-gray-500 bg-transparent border-gray-300 appearance-none f peer border-2 rounded-md p-2 w-full"
-                    placeholder="Enter your name" required />
+                  <input type="text" name="name" id="name"
+                    class="block py-3 px-3 w-full text-md text-gray-500 bg-transparent border-gray-300 shobSeat f peer border-2 rounded-md p-2 w-full"
+                    placeholder="Enter your name" required>
                 </div>
               </div>
 
               <div class="grid grid-cols-1">
                 <div class="relative z-0 w-full mb-5 group">
-                  <label for="floatingPhone" class="font-inter font-bold">
+                  <label for="phone" class="font-inter font-bold">
                     Phone Number*
                   </label>
-                  <input type="tel" name="floatingPhone" id="floatingPhone"
-                    class="block py-2.5 px-3 w-full text-md text-gray-900 bg-transparent border-0 border-gray-300 appearance-none peer border-2 rounded-md p-2 w-full"
-                    placeholder="Enter your phone number" required />
+                  <input type="tel" name="phone" id="phone"
+                    class="block py-3 px-3 w-full text-md text-gray-900 bg-transparent border-0 border-gray-300 shobSeat peer border-2 rounded-md p-2 w-full"
+                    placeholder="Enter your phone number" required pattern="[0-9]{11}">
                 </div>
               </div>
 
               <div class="relative z-0 w-full mb-6 group">
-                <label for="floatingEmail" class="font-inter font-bold">
+                <label for="email" class="font-inter font-bold">
                   Email ID
                 </label>
-                <input type="email" name="floatingEmail" id="floatingEmail"
-                  class="block py-2.5 px-3 w-full text-md text-gray-900 bg-transparent border-gray-300 appearance-none peer border-2 rounded-md p-2 w-full"
-                  placeholder="Enter your email id" required />
+                <input type="email" name="email" id="email"
+                  class="block py-3 px-3 w-full text-md text-gray-900 bg-transparent border-gray-300 shobSeat peer border-2 rounded-md p-2 w-full"
+                  placeholder="Enter your email id" required>
               </div>
 
-              <button type="submit" id="nextSuccessBtn" onclick="document.getElementById('myModal1').showModal()"
-                class="text-white bg-[#1DD100] hover:bg-[#1DD100] font-medium rounded-lg text-md w-full px-5 py-2.5 text-center btn">
+              <button type="submit" id="nextSuccessBtn" disabled="true"
+                class="text-white bg-[#1DD100] hover:bg-[#1DD100] font-medium rounded-lg text-md w-full px-5 py-3 text-center btn">
                 Next
               </button>
             </form>
@@ -503,7 +511,7 @@
 
   <!-- footer section starts -->
   <footer class="footer container max-w-full" id="footerContainer">
-    <section id="footerSect" class="footer w-full bg-black text-white py-32 min-h-28">
+    <section id="footerSect" class="footer w-full bg-black text-white py-32 min-h-8">
       <div class="mx-auto text-black" id=""># optional footer</div>
       <hr class="" />
       <div class="text-black" id=""># optional footer</div>
@@ -515,6 +523,7 @@
   <section class="modal text-center font-roboto" id="modalSect">
     <!-- Open the modal using ID.showModal() method -->
     <button class="btn" onclick="document.getElementById('myModal1').showModal()">open modal</button>
+
     <dialog id="myModal1" class="modal">
       <div class="modal-box ">
         <p class="flex justify-center"><img src="./images/success.png" alt=""></p>
